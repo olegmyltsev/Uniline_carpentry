@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNILINE CARPENTRY</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
@@ -27,13 +28,45 @@
                 </div>
             </div>
             <nav class="nav">
-                <a class="nav__item nav__item-active" href="#">about us</a>
+                <a class="nav__item nav__item_active" href="#">about us</a>
                 <a class="nav__item" href="#">gallery</a>
                 <a class="nav__item" href="#">contacts</a>
             </nav>
         </div>
     </header>
+    <section class="slider">
+        <div class="container">
+            <div class="slider__wrapper">
+                <div class="slider__item animate__fast slider__item_active animate__zoomIn animate__animated">
+                    <img src="img/0748.jpg" alt="">
+                    <div class="slider__descr">fast work</div>
+                </div>
+                <div class="slider__item animate__fast">
+                    <img src="img/280042d017fe5fe4bc629a0d9e5a3da6.jpeg" alt="">
+                    <div class="slider__descr">best quality</div>
+                </div>
+                <div class="slider__item animate__fast">
+                    <img src="img/_MG_3454.JPG" alt="">
+                    <div class="slider__descr">available price</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <form  class="contact__form">
+                <input required name="name" placeholder="name" type="text">
+                <input required name="phone" placeholder="phone" type="number">
+                <input required name="email" placeholder="e-mail" type="email">
+                <button>send</button>
+            </form>
+        </div>
+    </section>
+
+
+
     <script src="js/nav.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
