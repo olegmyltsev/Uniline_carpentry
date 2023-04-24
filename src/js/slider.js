@@ -15,7 +15,6 @@ function slide (){
     slides[count].classList.add('slider__item_active')
     count++
     if(count>2) {count=0}
-    console.log(count);
 }
 slidesWrapper.addEventListener("click", ()=>{
     slide()

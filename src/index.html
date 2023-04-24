@@ -53,20 +53,29 @@
         </div>
     </section>
     <section class="contact">
-        <div class="container">
-            <form  class="contact__form">
-                <input required name="name" placeholder="name" type="text">
-                <input required name="phone" placeholder="phone" type="number">
-                <input required name="email" placeholder="e-mail" type="email">
-                <button>send</button>
-            </form>
+        <div class="contact__wrapper">
+            <div class="container">
+                <div class="contact__title">
+                    contact us
+                </div>
+                <form class="contact__form">
+                    <input required name="name" placeholder="name" type="text">
+                    <input required name="phone" data-phone-pattern='+1 (___) ___-__-__' placeholder="phone">
+                    <input name="email" placeholder="e-mail" type="email">
+                    <input name="order" placeholder="your request" type="text">
+                    <button>submit</button>
+                </form>
+            </div>
         </div>
+
     </section>
 
 
 
     <script src="js/nav.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/phone_mask.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>
