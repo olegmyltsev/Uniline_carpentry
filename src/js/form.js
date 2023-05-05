@@ -8,13 +8,9 @@ const form = document.querySelector('.contact__form'),
 
 form.addEventListener('submit', (event) => {
     event.preventDefault()
-    let message = 
-    `name: ${name.value}, 
-    phone: ${phone.value}, 
-    email: ${email.value},
-    order: ${order.value}`
+    let message =`name: ${name.value}%0Aphone:${phone.value}%0Aemail: ${email.value}%0Aorder: ${order.value}` 
     fetch(`https://api.telegram.org/bot6130561127:AAGc09-QEuhaIX-LFecXFsgLBWsKGf4ih08/sendMessage?chat_id=-1001937252193&parse_mode=html&text=${message}`) 
-    console.log();
+    console.log("");
 })
 
 
